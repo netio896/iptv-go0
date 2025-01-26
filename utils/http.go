@@ -10,7 +10,7 @@ import (
 )
 
 func GetTestVideoUrl(w http.ResponseWriter) {
-	TimeLocation, err := time.LoadLocation("Asia/Shanghai")
+	TimeLocation, err := time.LoadLocation("Asia/Yangon")
 	if err != nil {
 		TimeLocation = time.FixedZone("CST", 8*60*60)
 	}
